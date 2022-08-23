@@ -1,54 +1,95 @@
 body {
-    font: 14px "Century Gothic", Futura, sans-serif;
-    margin: 20px;
-  }
-  
-  ol, ul {
-    padding-left: 30px;
-  }
-  
-  .board-row:after {
-    clear: both;
-    content: "";
-    display: table;
-  }
-  
-  .status {
-    margin-bottom: 10px;
-  }
-  
-  .square {
-    background: #fff;
-    border: 1px solid #999;
-    float: left;
-    font-size: 24px;
-    font-weight: bold;
-    line-height: 34px;
-    height: 34px;
-    margin-right: -1px;
-    margin-top: -1px;
-    padding: 0;
-    text-align: center;
-    width: 34px;
-  }
-  
-  .square:focus {
-    outline: none;
-  }
-  
-  .kbd-navigation .square:focus {
-    background: #ddd;
-  }
-  
-  .game {
-    display: flex;
-    flex-direction: row;
-  }
-  
-  .game-info {
-    margin-left: 20px;
-  }
-  
-  .winner {
-    font-style: bold;
-  }
+  font: 14px "Century Gothic", Futura, sans-serif;
+  margin: 20px;
+}
+
+ol, ul {
+  padding-left: 30px;
+}
+
+.board-row:after {
+  clear: both;
+  content: "";
+  display: table;
+}
+
+.status {
+  margin-bottom: 10px;
+}
+
+.square {
+  background: #fff;
+  border: 1px solid #999;
+  float: left;
+  font-size: 34px;
+  font-weight: bold;
+  line-height: 34px;
+  height: 50px;
+  margin-right: -1px;
+  margin-top: -1px;
+  padding: 0;
+  text-align: center;
+  width: 50px;
+}
+
+.square:hover {
+  border: 3px solid;
+}
+
+.square:focus {
+  outline: none;
+}
+
+.kbd-navigation .square:focus {
+  background: #ddd;
+}
+
+.game {
+  display: flex;
+  flex-direction: row;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.game-info {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.game-header {
+  margin-bottom: 20px;
+  width: 238px;
+  text-align: center;
+}
+
+.winner {
+  font-style: bold;
+}
+
+.moves-info {
+  margin-top: 2px;
+  margin-bottom: 2px;
+}
+
+.moves-button {
+  background-color: white;
+  color: black;
+  border: 1px solid #008CBA;
+  border-radius: 6px;
+  transition-duration: 0.3s;
+}
+
+.moves-button:hover {
+  background-color: #008CBA;
+  color: white;
+}
+
+#grad1 {
+  background: red;
+  background: -webkit-linear-gradient(left, red, orange , yellow, green, cyan, blue, violet);
+  background: -o-linear-gradient(right, red, orange, yellow, green, cyan, blue, violet);
+  background: -moz-linear-gradient(right, red, orange, yellow, green, cyan, blue, violet);
+  background: linear-gradient(to right, red, orange , yellow, green, cyan, blue, violet);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
