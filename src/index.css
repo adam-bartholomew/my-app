@@ -58,7 +58,9 @@ ol, ul {
 
 .game-header {
   margin-bottom: 20px;
-  width: 238px;
+  margin-left: 10px;
+  margin-right: 10px;
+  width: 284px;
   text-align: center;
 }
 
@@ -67,8 +69,8 @@ ol, ul {
 }
 
 .moves-info {
-  margin-top: 2px;
-  margin-bottom: 2px;
+  margin-top: 4px;
+  margin-bottom: 4px;
 }
 
 .moves-button {
@@ -76,7 +78,7 @@ ol, ul {
   color: black;
   border: 1px solid #008CBA;
   border-radius: 6px;
-  transition-duration: 0.3s;
+  transition-duration: 0.2s;
 }
 
 .moves-button:hover {
@@ -84,7 +86,8 @@ ol, ul {
   color: white;
 }
 
-#grad1 {
+#grad-title {
+  margin: 20px;
   background: red;
   background: -webkit-linear-gradient(left, red, orange , yellow, green, cyan, blue, violet);
   background: -o-linear-gradient(right, red, orange, yellow, green, cyan, blue, violet);
